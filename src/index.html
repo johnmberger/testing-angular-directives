@@ -18,7 +18,8 @@
     <div class="container">
       <div ng-controller="mainController as mainCtrl">
         <p>{{ mainCtrl.greeting }}</p>
-        <div material-icon></div>
+        <input type="text" ng-model="mainCtrl.icon">
+        <material-icon name="{{mainCtrl.icon}}"></material-icon>
       </div>
     </div>
 

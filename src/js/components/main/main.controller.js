@@ -11,6 +11,8 @@
   function mainController($scope) {
     /*jshint validthis: true */
     this.greeting = 'Hello World!';
+    this.iconName = 'android';
+    this.icon = '';
   }
 
 })();

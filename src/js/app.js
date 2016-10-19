@@ -11,7 +11,11 @@
     ])
     .directive('materialIcon', function() {
       return {
-        template: '<i class="material-icons">favorite<i>'
+        scope: {
+          name: '@'
+        },
+        restrict: 'E',
+        template: '<i class="material-icons">{{name}}<i>'
       }
     });
 
